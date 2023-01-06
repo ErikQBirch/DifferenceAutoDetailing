@@ -5,11 +5,12 @@ export const establishHTML_header = {
   header: function(
     bothNavs = establishHTML_nav.nav(),
     logoElement = this.logo(),
+    headerElement = helperFunctions.generateElement('header')
   ){
-    let headerElement = helperFunctions.generateElement('header');
     headerElement = helperFunctions.appendChildren(headerElement, logoElement, bothNavs[0], bothNavs[1]);
     console.log(headerElement);
-    document.querySelector('body').appendChild(headerElement);
+    // document.querySelector('body').appendChild(headerElement);
+    return headerElement;
   },
   logo: function(
     logoPath = "/assets/imgs/other/logo.png",

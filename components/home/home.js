@@ -4,6 +4,10 @@ import { features } from '../../assets/db/features_db.js';
 import { deals } from '../../assets/db/deals_db.js';
 import { copy } from '../../assets/db/copy_db.js';
 
+import { establishHTML_header } from '../header/header.js';
+import { establishHTML_footer } from '../footer/footer.js';
+
+
 export const establishHTML_main = {
   banner: function(
     banner = helperFunctions.generateElement('section',"topBanner"),
@@ -12,8 +16,16 @@ export const establishHTML_main = {
   ){
     banner = helperFunctions.nestChildren(banner, overlay, h1);
     banner.style.backgroundImage = `url(${ photos[0].path })`;
-    // banner.style.backgroundColor = "red";
     return banner;
+  },
+  constructPage: function(
+    headerElement = establishHTML_header.header(),
+    mainElement = this.mainElement(),
+    footerElement = establishHTML_footer.footer(),
+    bodyElement = document.querySelector('body')
+  ){
+    bodyElement = helperFunctions.appendChildren(document.querySelector('body'), headerElement, mainElement,footerElement);
+    
   },
   featureCard: function(
     feature,
@@ -30,12 +42,10 @@ export const establishHTML_main = {
       let img; 
       photos.forEach(p => {
         if (p.category == feature && p.type == "thumbnail"){
-          // console.log(p.category, feature, p.type);
           img = helperFunctions.generateElement('img',p.alt,"","",p.path)
         }
         
       });
-      console.log(img)
       article.appendChild(img);
       return article;
   },
@@ -46,7 +56,6 @@ export const establishHTML_main = {
   ){
     section = helperFunctions.nestChildren(section, overlay, contentHolder);
     
-    console.log(features);
     features.forEach(f => {
       let article = this.featureCard(f.name);
       contentHolder.appendChild(article);
@@ -54,23 +63,21 @@ export const establishHTML_main = {
 
     deals.forEach(d => {
       if (d.type == "Bonus Option"){
-        console.log("Bonus Option")
         let article = this.featureCard(d.deal);
         contentHolder.appendChild(article);
       }
     });
     return section;
   },
-  main: function(
+  mainElement: function(
     banner = this.banner(),
     mainContent = this.mainContent(),
     main = helperFunctions.generateElement('main')
   ){
     main = helperFunctions.appendChildren(main, banner, mainContent);
     mainContent.style.backgroundImage = (`url(${photos[1].path})`);
-    console.log(main);
-    document.querySelector('body').appendChild(main);
+    return main;
   }
 }
 
-establishHTML_main.main();
+establishHTML_main.constructPage();

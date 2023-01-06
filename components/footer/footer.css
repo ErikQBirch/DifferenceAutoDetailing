@@ -1,0 +1,37 @@
+@media only all and (min-width: 0) {
+  footer {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    height: 45vh;
+    background: rgb(133, 142, 164);
+    background: radial-gradient(circle, rgb(133, 142, 164) 0%, rgb(0, 0, 10) 50%);
+  }
+  footer div.overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+  footer div.overlay article {
+    margin: 2.5rem auto;
+    padding: 2rem;
+    width: 90vw;
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+  footer div.overlay article h3 {
+    font-weight: lighter;
+  }
+  footer div.overlay article p {
+    font-weight: lighter;
+    margin-bottom: 0.5rem;
+  }
+  footer div.overlay article p a:link,
+footer div.overlay article p a:visited {
+    color: white;
+  }
+}/*# sourceMappingURL=footer.css.map */
