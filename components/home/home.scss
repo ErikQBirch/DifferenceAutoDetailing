@@ -1,0 +1,26 @@
+@media only all and (min-width:0){
+  main{
+    section#topBanner{
+      width: 100%;
+      height: 80vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-clip: border-box;
+      div.overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media only all and (min-width: 786px){}
+@media only all and (min-width: 992px){}
+@media only all and (min-width: 1200px){}
