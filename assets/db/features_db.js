@@ -6,13 +6,13 @@ export const features = [
     "name": "Steam Sanitation"
   },
   {
-    "name": "Complete Surace Cleaning"
+    "name": "Complete Surface Cleaning"
   },
   {
     "name": "Air Sanitation"
   },
   {
-    "name": "UV Protection"
+    "name": "UV Plastic Protection"
   },
   {
     "name": "Leather Cleaning and Conditioning"

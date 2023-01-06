@@ -83,9 +83,7 @@ export const helperFunctions = {
         element.setAttribute('type', paramClass);
         break;
       case 'button':
-        console.log(paramLink)
         if (paramLink != ''){
-          console.log('okay')
           element.addEventListener('click', ()=> {
             console.log(paramLink);
             window.location.href = paramLink;

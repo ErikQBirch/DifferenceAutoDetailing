@@ -1,6 +1,7 @@
 import { helperFunctions } from '../index/index.js';
 import { photos } from '../../assets/db/photos_db.js';
 import { features } from '../../assets/db/features_db.js';
+import { deals } from '../../assets/db/deals_db.js';
 import { copy } from '../../assets/db/copy_db.js';
 
 export const establishHTML_main = {
@@ -22,20 +23,41 @@ export const establishHTML_main = {
     dealsBtn = helperFunctions.generateElement('button',"","","See Deals","/pages/deals.html"),
     sampleBtn = helperFunctions.generateElement('button',"","","View Sample")
     ){
+      
       article = helperFunctions.nestChildren(article, overlay, h3);
       overlay = helperFunctions.appendChildren(overlay, dealsBtn, sampleBtn);
+
+      let img; 
+      photos.forEach(p => {
+        if (p.category == feature && p.type == "thumbnail"){
+          // console.log(p.category, feature, p.type);
+          img = helperFunctions.generateElement('img',p.alt,"","",p.path)
+        }
+        
+      });
+      console.log(img)
+      article.appendChild(img);
       return article;
   },
   mainContent: function(
-    section = helperFunctions.generateElement('section'," mainContent"),
+    section = helperFunctions.generateElement('section',"mainContent"),
     overlay = helperFunctions.generateElement('div',"","overlay"),
     contentHolder = helperFunctions.generateElement('div',"contentHolder")
   ){
     section = helperFunctions.nestChildren(section, overlay, contentHolder);
+    
     console.log(features);
     features.forEach(f => {
       let article = this.featureCard(f.name);
-      section.appendChild(article);
+      contentHolder.appendChild(article);
+    });
+
+    deals.forEach(d => {
+      if (d.type == "Bonus Option"){
+        console.log("Bonus Option")
+        let article = this.featureCard(d.deal);
+        contentHolder.appendChild(article);
+      }
     });
     return section;
   },
@@ -45,6 +67,7 @@ export const establishHTML_main = {
     main = helperFunctions.generateElement('main')
   ){
     main = helperFunctions.appendChildren(main, banner, mainContent);
+    mainContent.style.backgroundImage = (`url(${photos[1].path})`);
     console.log(main);
     document.querySelector('body').appendChild(main);
   }
