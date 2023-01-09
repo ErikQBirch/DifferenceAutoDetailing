@@ -3,6 +3,7 @@ import { photos } from '../../assets/db/photos_db.js';
 import { features } from '../../assets/db/features_db.js';
 import { deals } from '../../assets/db/deals_db.js';
 import { copy } from '../../assets/db/copy_db.js';
+import { contact } from '../../assets/db/contact_db.js';
 
 import { establishHTML_header } from '../header/header.js';
 import { establishHTML_footer } from '../footer/footer.js';
@@ -27,6 +28,33 @@ export const establishHTML_main = {
     bodyElement = helperFunctions.appendChildren(document.querySelector('body'), headerElement, mainElement,footerElement);
     
   },
+  display: function(
+    feature,
+    displayElement = helperFunctions.generateElement('div',"display"),
+    h1 = helperFunctions.generateElement('h1',"","",feature),
+    imgHolder = helperFunctions.generateElement('div',"","imgHolder"),
+    facebook = helperFunctions.generateElement('a',"","","See more",contact.facebook)
+  ){
+    console.log(feature);
+    photos.forEach(p => {
+      if (p.category == feature && (p.type == "before" || p.type == "after") && p.alt !== "NoImg"){
+        let figure = helperFunctions.generateElement('figure');
+        let img = helperFunctions.generateElement('img',p.alt,"","",p.path);
+        imgHolder = helperFunctions.nestChildren(imgHolder,figure,img);
+        // figure.appendChild(img);
+      }
+    });
+
+    if (imgHolder.children.length == 1){
+      imgHolder.classList.add('onlyOne');
+    }
+
+    displayElement = helperFunctions.appendChildren(displayElement, h1, imgHolder, facebook);
+    displayElement.addEventListener('click',()=>{
+      displayElement.remove();
+    })
+    document.querySelector('main').appendChild(displayElement);
+  },
   featureCard: function(
     feature,
     article = helperFunctions.generateElement('article'),
@@ -46,7 +74,12 @@ export const establishHTML_main = {
         }
         
       });
+
+      sampleBtn.addEventListener('click', ()=>{
+        this.display(feature);
+      })
       article.appendChild(img);
+
       return article;
   },
   mainContent: function(

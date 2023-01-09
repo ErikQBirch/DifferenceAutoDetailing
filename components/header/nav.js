@@ -6,19 +6,15 @@ export const establishHTML_nav = {
     urlKey = this.getUrlKey()
   ){
     let navOptions;
-
-    console.log(urlKey)
     switch(urlKey){
       case "deals":
       case "reviews":
       case "about":
       case "contact":
         navOptions = navData
-        console.log("navData")
         break;
       default:
         navOptions = navData_index
-        console.log("navData_index")
         break;
     }
   

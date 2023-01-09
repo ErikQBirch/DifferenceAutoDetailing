@@ -22,9 +22,12 @@
     width: 90vw;
     border: 1px solid white;
     border-radius: 10px;
+    font-family: "Roboto", sans-serif;
   }
   footer div.overlay article h3 {
     font-weight: lighter;
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
   footer div.overlay article p {
     font-weight: lighter;
@@ -33,5 +36,16 @@
   footer div.overlay article p a:link,
 footer div.overlay article p a:visited {
     color: white;
+  }
+}
+@media only all and (min-width: 786px) {
+  footer div.overlay article {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60vw;
+  }
+  footer div.overlay article p {
+    margin-bottom: 0.55rem;
   }
 }/*# sourceMappingURL=footer.css.map */

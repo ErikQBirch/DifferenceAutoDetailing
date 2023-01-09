@@ -5,7 +5,7 @@ export const photos = [
     "category": "Background",
     "type": "hero",
     "alt": "homePic_sm",
-    "path": "assets/imgs/Pages/home-hero.jpg"
+    "path": "assets/imgs/pages/home-hero.jpg"
   },
   {
     "Id": "639184a81f262e47a3dbba29",
@@ -13,7 +13,7 @@ export const photos = [
     "category": "Background",
     "type": "secondary",
     "alt": "home-secondary",
-    "path": "assets/imgs/Pages/home-secondary.jpg"
+    "path": "assets/imgs/pages/home-secondary.jpg"
   },
   {
     "Id": "639184a81f262e47a3dbba2a",
@@ -21,7 +21,7 @@ export const photos = [
     "category": "Background",
     "type": "hero",
     "alt": "deals-hero",
-    "path": "assets/imgs/Pages/deals-hero.jpg"
+    "path": "assets/imgs/pages/deals-hero.jpg"
   },
   {
     "Id": "639184a81f262e47a3dbba2b",
@@ -29,7 +29,7 @@ export const photos = [
     "category": "Background",
     "type": "secondary",
     "alt": "deals-secondary",
-    "path": "assets/imgs/Pages/deals-secondary.jpg"
+    "path": "assets/imgs/pages/deals-secondary.jpg"
   },
   {
     "Id": "639184a81f262e47a3dbba2c",
@@ -37,7 +37,7 @@ export const photos = [
     "category": "Background",
     "type": "hero",
     "alt": "reviews-hero",
-    "path": "assets/imgs/Pages/reviews-hero.jpg"
+    "path": "assets/imgs/pages/reviews-hero.jpg"
   },
   {
     "Id": "639184a81f262e47a3dbba2d",
@@ -53,7 +53,7 @@ export const photos = [
     "category": "Background",
     "type": "hero",
     "alt": "about-hero",
-    "path": "assets/imgs/Pages/about-hero.jpg"
+    "path": "assets/imgs/pages/about-hero.jpg"
   },
   {
     "Id": "639184a81f262e47a3dbba2f",
@@ -61,7 +61,15 @@ export const photos = [
     "category": "Background",
     "type": "secondary",
     "alt": "aboutPic_lg",
-    "path": ""
+    "path": "assets/imgs/pages/about-secondary.jpg"
+  },
+  {
+    "Id": "639184a81f262e47a3dbba2f",
+    "page": "About",
+    "category": "Background",
+    "type": "kyle",
+    "alt": "founder",
+    "path": "assets/imgs/other/kyle.jpg"
   },
   {
     "Id": "639184a81f262e47a3dbba30",
@@ -69,7 +77,7 @@ export const photos = [
     "category": "Background",
     "type": "hero",
     "alt": "contact-hero",
-    "path": "assets/imgs/Pages/contact-hero.jpg"
+    "path": "assets/imgs/pages/contact-hero.jpg"
   },
   {
     "Id": "639184a81f262e47a3dbba31",

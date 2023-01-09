@@ -1,0 +1,425 @@
+@media only all and (min-width:0){
+  main{
+    section#topBanner{
+      width: 100%;
+      height: 60vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-clip: border-box;
+      div.overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight:300;
+          font-size: 5rem;
+          line-height: 3rem;
+        }
+      }
+    }
+    section#mainContent {
+      width: 100%;
+      background: black;
+      background-image: url('../../../../assets/imgs/Pages/deals-secondary.jpg');
+      background-repeat:no-repeat;
+      background-position: center;
+      background-size:cover;
+      div.overlay{
+        z-index: 1;
+        flex-direction:column;
+        justify-content: flex-start;
+        align-items:start;
+        height: auto;
+        background-color: rgba(0,0,0,0.8);
+        overflow-x:auto;
+        padding: 5rem 1rem;
+        color:White;
+        div#contentHolder{
+          width: 85vw;
+          margin: 0 auto;
+          font-family: 'Roboto', sans-serif;
+          div > h2 {
+            text-decoration: underline;
+            font-weight:lighter;
+            margin:0;
+          }
+          div.row{
+            display:flex;
+            width: 100%;
+            justify-content: space-between;
+            line-height: 1.5rem;
+          }
+          div > span.note {
+            font-size: 0.75rem;
+            margin-top: 2rem;
+            font-style:italic;
+          }
+          div#dealsHolder{
+            width: 100%;
+            margin: 2.5rem 0;
+            background-color:rgba(255,255,255,0.15);
+            padding: 2.5rem;
+            border-radius: 10px;
+            h2{
+              // margin-bottom: -0.5rem;
+            }
+            h3{
+              font-size: 1rem;
+              margin: 0.5rem 0 -0.25rem 0;
+              font-weight: bolder;
+            }
+            
+          }
+          div#featuresHolder{
+            background-color:rgba(255,255,255,0.15);
+            padding: 2.5rem;
+            border-radius: 10px;
+            ul{
+              padding:0 0 0 1rem;;
+              // margin: 0;
+              li{
+                line-height: 1.5rem;
+              }
+            }
+          }
+          // div{
+          //   background-color:rgba(255,255,255,0.15);
+          //   padding: 2.5rem;
+          //   border-radius: 10px;
+          // }
+        }
+      }
+    }
+  }
+}
+@media only all and (min-width: 786px){
+  main{
+    section#topBanner{
+      width: 100%;
+      height: 60vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-clip: border-box;
+      div.overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight:300;
+          font-size: 5rem;
+          line-height: 3rem;
+        }
+      }
+    }
+    section#mainContent {
+      width: 100%;
+      background: black;
+      background-image: url('../../../../assets/imgs/Pages/deals-secondary.jpg');
+      background-repeat:no-repeat;
+      background-position: center;
+      background-size:cover;
+      div.overlay{
+        z-index: 1;
+        flex-direction:column;
+        justify-content: flex-start;
+        align-items:start;
+        height: auto;
+        background-color: rgba(0,0,0,0.8);
+        overflow-x:auto;
+        padding: 5rem 1rem;
+        color:White;
+        div#contentHolder{
+          width: 85vw;
+          margin: 0 auto;
+          font-family: 'Roboto', sans-serif;
+          div > h2 {
+            text-decoration: underline;
+            font-weight:lighter;
+            margin:0;
+            font-size: 2.5rem;
+          }
+          div.row{
+            display:flex;
+            width: 100%;
+            justify-content: space-between;
+            line-height: 1.5rem;
+            font-size: 1.25rem;
+          }
+          div > span.note {
+            font-size: 0.75rem;
+            margin-top: 2rem;
+            font-style:italic;
+          }
+          div#dealsHolder{
+            width: 100%;
+            margin: 2.5rem 0;
+            background-color:rgba(255,255,255,0.15);
+            padding: 2.5rem;
+            border-radius: 10px;
+            h2{
+              // margin-bottom: -0.5rem;
+            }
+            h3{
+              font-size: 1rem;
+              margin: 0.5rem 0 -0.25rem 0;
+              font-weight: bolder;
+              font-size: 1.5rem;
+            }
+            
+          }
+          div#featuresHolder{
+            background-color:rgba(255,255,255,0.15);
+            padding: 2.5rem;
+            border-radius: 10px;
+            ul{
+              padding:0 0 0 1rem;;
+              // margin: 0;
+              li{
+                line-height: 1.5rem;
+                font-size: 1.25rem;
+              }
+            }
+          }
+          // div{
+          //   background-color:rgba(255,255,255,0.15);
+          //   padding: 2.5rem;
+          //   border-radius: 10px;
+          // }
+        }
+      }
+    }
+  }
+}
+@media only all and (min-width: 992px){
+  main{
+    section#topBanner{
+      width: 100%;
+      height: 60vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-clip: border-box;
+      div.overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight:300;
+          font-size: 7.5rem;
+          line-height: 3rem;
+        }
+      }
+    }
+    section#mainContent {
+      width: 100%;
+      background: black;
+      background-image: url('../../../../assets/imgs/Pages/deals-secondary.jpg');
+      background-repeat:no-repeat;
+      background-position: center;
+      background-size:cover;
+      div.overlay{
+        z-index: 1;
+        flex-direction:row;
+        justify-content: flex-start;
+        align-items:start;
+        height: auto;
+        background-color: rgba(0,0,0,0.8);
+        overflow-x:auto;
+        padding: 5rem 1rem;
+        color:White;
+        div#contentHolder{
+          width: 85vw;
+          margin: 0 auto;
+          font-family: 'Roboto', sans-serif;
+          display:flex;
+          flex-direction:row;
+          justify-content: space-evenly;
+          align-items: center;
+          div > h2 {
+            text-decoration: underline;
+            font-weight:lighter;
+            margin:0;
+            font-size: 2.5rem;
+          }
+          div.row{
+            display:flex;
+            width: 100%;
+            justify-content: space-between;
+            line-height: 1.5rem;
+            font-size: 1.25rem;
+          }
+          div > span.note {
+            font-size: 0.75rem;
+            margin-top: 2rem;
+            font-style:italic;
+          }
+          div#dealsHolder{
+            width: 30vw;
+            height: 25rem;
+            margin:0;
+            background-color:rgba(255,255,255,0.15);
+            padding: 2.5rem;
+            border-radius: 10px;
+            h2{
+              // margin-bottom: -0.5rem;
+            }
+            h3{
+              font-size: 1rem;
+              margin: 0.5rem 0 -0.25rem 0;
+              font-weight: bolder;
+              font-size: 1.5rem;
+            }
+            
+          }
+          div#featuresHolder{
+            background-color:rgba(255,255,255,0.15);
+            padding: 2.5rem;
+            border-radius: 10px;
+            width: 30vw;
+            height: 25rem;
+            ul{
+              padding:0 0 0 1rem;;
+              // margin: 0;
+              li{
+                line-height: 1.5rem;
+                font-size: 1.25rem;
+              }
+            }
+          }
+          // div{
+          //   background-color:rgba(255,255,255,0.15);
+          //   padding: 2.5rem;
+          //   border-radius: 10px;
+          // }
+        }
+      }
+    }
+  }
+}
+@media only all and (min-width: 1200px){
+  main{
+    section#topBanner{
+      width: 100%;
+      height: 60vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-clip: border-box;
+      div.overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight:300;
+          line-height: 3rem;
+        }
+      }
+    }
+    section#mainContent {
+      width: 100%;
+      background: black;
+      background-image: url('../../../../assets/imgs/Pages/deals-secondary.jpg');
+      background-repeat:no-repeat;
+      background-position: center;
+      background-size:cover;
+      div.overlay{
+        z-index: 1;
+        flex-direction:row;
+        justify-content: flex-start;
+        align-items:start;
+        height: auto;
+        background-color: rgba(0,0,0,0.8);
+        overflow-x:auto;
+        padding: 5rem 1rem;
+        color:White;
+        div#contentHolder{
+          width: 85vw;
+          margin: 0 auto;
+          font-family: 'Roboto', sans-serif;
+          display:flex;
+          flex-direction:row;
+          justify-content: space-evenly;
+          align-items: center;
+          div > h2 {
+            text-decoration: underline;
+            font-weight:lighter;
+            margin:0;
+            font-size: 3rem;
+          }
+          div.row{
+            display:flex;
+            width: 100%;
+            justify-content: space-between;
+            line-height: 2rem;
+            font-size: 1.75em;
+          }
+          div > span.note {
+            font-size: 0.75rem;
+            margin-top: 2rem;
+            font-style:italic;
+          }
+          div#dealsHolder{
+            width: 35vw;
+            height: 25rem;
+            margin:0;
+            background-color:rgba(255,255,255,0.15);
+            padding: 2.5rem;
+            border-radius: 10px;
+            h2{
+              // margin-bottom: -0.5rem;
+            }
+            h3{
+              font-size: 1rem;
+              margin: 0.5rem 0 -0.25rem 0;
+              font-weight: bolder;
+              font-size: 2rem;
+            }
+            
+          }
+          div#featuresHolder{
+            background-color:rgba(255,255,255,0.15);
+            padding: 2.5rem;
+            border-radius: 10px;
+            width: 35vw;
+            height: 25rem;
+            ul{
+              padding:0 0 0 1rem;;
+              // margin: 0;
+              li{
+                line-height: 2rem;
+                font-size: 1.75rem;
+              }
+            }
+          }
+          // div{
+          //   background-color:rgba(255,255,255,0.15);
+          //   padding: 2.5rem;
+          //   border-radius: 10px;
+          // }
+        }
+      }
+    }
+  }  
+}

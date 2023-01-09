@@ -1,0 +1,310 @@
+@media only all and (min-width:0){
+  main{
+    section#topBanner{
+      width: 100%;
+      height: fit-content;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-clip: border-box;
+      div.overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        div#bio{
+          margin: 15vh 5vw 5vh 5vw;
+          padding: 5vw;
+          background-color: rgba(255,255,255,0.25);
+          border-radius: 10px;
+          h1{
+            text-align:center;
+            font-size: 2.5rem;
+            margin: 0 0 0.5rem 0;
+          }
+          p{
+
+          }
+        }
+        figure{
+          width: 70vw;
+          margin: 0 0 5vw 0;
+          border-radius: 10px;
+          overflow:hidden;
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+    section#mainContent {
+      width: 100%;
+      background: black;
+      background-image: url('../../../../assets/imgs/Pages/deals-secondary.jpg');
+      background-repeat:no-repeat;
+      background-position: center;
+      background-size:cover;
+      div.overlay{
+        z-index: 1;
+        flex-direction:column;
+        justify-content: flex-start;
+        align-items:start;
+        height: auto;
+        background-color: rgba(0,0,0,0.75);
+        overflow-x:auto;
+        padding: 5rem 1rem;
+        color:White;
+        div#contentHolder{
+          width: 85vw;
+          margin: 0 auto;
+          // font-family: 'Roboto', sans-serif;
+          div#why{
+            // margin: 15vh 5vw 5vh 5vw;
+            padding: 2.5vw;
+            background-color: rgba(255,255,255,0.25);
+            border-radius: 10px;
+            h1{
+              font-size:2rem;
+              text-align:center;
+              margin: 0 0 0.5rem 0;
+            }
+            p{}
+          }
+        }
+      }
+    }
+  }
+}
+@media only all and (min-width: 786px){
+  main{
+    section#topBanner{
+      width: 100%;
+      height: fit-content;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-clip: border-box;
+      div.overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10rem 0;
+        div#bio{
+          margin: 0;
+          padding: 1rem 2.5rem;
+          width:50vw;
+          h1{
+            text-align:center;
+            font-size: 2.5rem;
+            margin: 0 0 0.5rem 0;
+          }
+          p{
+
+          }
+        }
+        figure{
+          width: 30vw;
+          margin: 0;
+          border-radius: 10px;
+          overflow:hidden;
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+    section#mainContent {
+      width: 100%;
+      background: black;
+      background-image: url('../../../../assets/imgs/Pages/deals-secondary.jpg');
+      background-repeat:no-repeat;
+      background-position: center;
+      background-size:cover;
+      div.overlay{
+        z-index: 1;
+        flex-direction:column;
+        justify-content: flex-start;
+        align-items:start;
+        height: auto;
+        background-color: rgba(0,0,0,0.75);
+        overflow-x:auto;
+        padding: 5rem 1rem;
+        color:White;
+        div#contentHolder{
+          width: 85vw;
+          margin: 0 auto;
+          // font-family: 'Roboto', sans-serif;
+          div#why{
+            h1{
+              font-size:2rem;
+              text-align:center;
+              margin: 0 0 0.5rem 0;
+            }
+            p{}
+          }
+        }
+      }
+    }
+  }
+}
+@media only all and (min-width: 992px){
+  main{
+    section#topBanner{
+      width: 100%;
+      height: fit-content;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-clip: border-box;
+      div.overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10rem 0;
+        div#bio{
+          margin: 0;
+          padding: 1rem 2.5rem;
+          width:50vw;
+          h1{
+            text-align:center;
+            font-size: 2.5rem;
+            margin: 0 0 0.5rem 0;
+          }
+          p{
+
+          }
+        }
+        figure{
+          width: 30vw;
+          margin: 0;
+          border-radius: 10px;
+          overflow:hidden;
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+    section#mainContent {
+      width: 100%;
+      background: black;
+      background-image: url('../../../../assets/imgs/Pages/deals-secondary.jpg');
+      background-repeat:no-repeat;
+      background-position: center;
+      background-size:cover;
+      div.overlay{
+        z-index: 1;
+        flex-direction:column;
+        justify-content: flex-start;
+        align-items:start;
+        height: auto;
+        background-color: rgba(0,0,0,0.75);
+        overflow-x:auto;
+        padding: 5rem 1rem;
+        color:White;
+        div#contentHolder{
+          width: 60vw;
+          margin: 0 auto;
+          // font-family: 'Roboto', sans-serif;
+          div#why{
+            h1{
+              font-size:2rem;
+              text-align:center;
+              margin: 0 0 0.5rem 0;
+            }
+            p{}
+          }
+        }
+      }
+    }
+  }
+}
+@media only all and (min-width: 1200px){
+  main{
+    section#topBanner{
+      width: 100%;
+      height: fit-content;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-clip: border-box;
+      div.overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10rem 0;
+        div#bio{
+          margin: 0;
+          padding: 1rem 2.5rem;
+          width:60vw;
+          h1{
+            text-align:center;
+            font-size: 2.5rem;
+            margin: 0 0 0.5rem 0;
+          }
+          p{
+            font-size: 1.5rem;
+          }
+        }
+        figure{
+          width: 25vw;
+          margin: 0;
+          border-radius: 10px;
+          overflow:hidden;
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+    section#mainContent {
+      width: 100%;
+      background: black;
+      background-image: url('../../../../assets/imgs/Pages/deals-secondary.jpg');
+      background-repeat:no-repeat;
+      background-position: center;
+      background-size:cover;
+      div.overlay{
+        z-index: 1;
+        flex-direction:column;
+        justify-content: flex-start;
+        align-items:start;
+        height: auto;
+        background-color: rgba(0,0,0,0.75);
+        overflow-x:auto;
+        padding: 5rem 1rem;
+        color:White;
+        div#contentHolder{
+          width: 60vw;
+          margin: 0 auto;
+          // font-family: 'Roboto', sans-serif;
+          div#why{
+            h1{
+              font-size:2rem;
+              text-align:center;
+              margin: 0 0 0.5rem 0;
+            }
+            p{
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

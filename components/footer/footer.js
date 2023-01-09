@@ -6,7 +6,7 @@ export const establishHTML_footer = {
     footerElement = helperFunctions.generateElement('footer'),
     overlay = helperFunctions.generateElement('div',"","overlay"),
     article = helperFunctions.generateElement('article'),
-    h3 = helperFunctions.generateElement('h3'),
+    h3 = helperFunctions.generateElement('h3',"","","Contact"),
     infoHolder = helperFunctions.generateElement('div','infoHolder')
   ){
     for (let info in contact){

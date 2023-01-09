@@ -8,7 +8,6 @@ export const establishHTML_header = {
     headerElement = helperFunctions.generateElement('header')
   ){
     headerElement = helperFunctions.appendChildren(headerElement, logoElement, bothNavs[0], bothNavs[1]);
-    console.log(headerElement);
     // document.querySelector('body').appendChild(headerElement);
     return headerElement;
   },

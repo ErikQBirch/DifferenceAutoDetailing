@@ -20,6 +20,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 2rem;
+    line-height: 3rem;
   }
   main section#mainContent {
     width: 100%;
@@ -70,13 +71,16 @@
     overflow: hidden;
     transition: all 0.25s ease-in-out;
     font-family: "Roboto", sans-serif;
+    font-weight: lighter;
   }
   main section#mainContent div.overlay div#contentHolder article div.overlay h3 {
     text-align: center;
     font-weight: 200;
     margin-bottom: 1.5rem;
+    font-size: 2rem;
     padding: 0 1rem;
     color: white;
+    font-weight: bolder;
   }
   main section#mainContent div.overlay div#contentHolder article div.overlay button {
     background: transparent;
@@ -85,14 +89,17 @@
     border-radius: 10px;
     padding: 0.5rem;
     margin-bottom: 1.75rem;
-    font-weight: 100;
+    font-weight: lighter;
+    font-size: 1.5rem;
     transition: all 0.25s ease-in-out;
+    line-height: 1.75rem;
   }
   main section#mainContent div.overlay div#contentHolder article div.overlay button:hover,
 main section#mainContent div.overlay div#contentHolder article div.overlay button:active {
     background-color: rgba(255, 255, 255, 0.85);
     color: black;
     border-color: transparent;
+    cursor: pointer;
   }
   main section#mainContent div.overlay div#contentHolder article img {
     box-sizing: content-box;
@@ -109,6 +116,169 @@ main section#mainContent div.overlay div#contentHolder article:active div.overla
   }
   main section#mainContent div.overlay::-webkit-scrollbar {
     display: none;
+  }
+  main section#mainContent img {
+    position: relative;
+    width: 100%;
+  }
+  main div#display {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5vw;
+    opacity: 0;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 0.75s;
+            animation-duration: 0.75s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    cursor: pointer;
+  }
+  main div#display h1 {
+    z-index: 3;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+  }
+  main div#display div.imgHolder {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+  }
+  main div#display div.imgHolder figure {
+    width: 90vw;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  main div#display div.imgHolder figure img {
+    width: 100%;
+  }
+  main div#display a:link,
+main div#display a:visited {
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+  }
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+}
+@media only all and (min-width: 786px) {
+  main section#topBanner {
+    height: 60vh;
+  }
+  main section#topBanner div.overlay h1 {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+  main section#mainContent div.overlay {
+    overflow-x: hidden;
+    padding: 5rem 7.5vw;
+  }
+  main section#mainContent div.overlay div#contentHolder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 10vw;
+         column-gap: 10vw;
+    row-gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  main section#mainContent div.overlay div#contentHolder article {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    height: 45vw;
+    width: 100%;
+  }
+  main section#mainContent div.overlay div#contentHolder article div.overlay {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+  }
+  main section#mainContent div.overlay div#contentHolder article img {
+    height: 100%;
+  }
+  main section#mainContent img {
+    position: relative;
+    width: 100%;
+  }
+  main div#display div.imgHolder {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  main div#display div.imgHolder figure {
+    width: 45vw;
+  }
+  main div#display div.imgHolder figure img {
+    width: 100%;
+  }
+}
+@media only all and (min-width: 1200px) {
+  main section#topBanner {
+    height: 75vh;
+  }
+  main section#mainContent div.overlay div#contentHolder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 7.5vw;
+         column-gap: 7.5vw;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  main section#mainContent div.overlay div#contentHolder article {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    height: 25vw;
+    width: 100%;
+  }
+  main section#mainContent div.overlay div#contentHolder article div.overlay {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+  }
+  main section#mainContent div.overlay div#contentHolder article img {
+    height: 100%;
   }
   main section#mainContent img {
     position: relative;

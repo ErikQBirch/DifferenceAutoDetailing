@@ -1,0 +1,193 @@
+@media only all and (min-width:0){
+  main{
+    section#topBanner{
+      width: 100%;
+      height: 60vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-clip: border-box;
+      div.overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight:300;
+          font-size: 4rem;
+          line-height: 3rem;
+        }
+      }
+    }
+    section#mainContent {
+      width: 100%;
+      background: rgb(133,142,164);
+      background: linear-gradient(180deg, rgba(133,142,164,1) 0%, rgba(0,0,10,1) 100%);
+      padding: 2.5rem 0;
+      .review{
+        width: 80vw;
+        margin:1rem auto;
+        padding: 1.5rem;
+        border: 1px solid white;
+        background-color: rgb(255,255,255,0.25);
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        border-radius: 10px;
+        h3{
+          font-weight: normal;
+        }
+        .row{
+          display:flex;
+          flex-direction: row;
+          width:100%;
+          flex-wrap:nowrap;
+          justify-content: space-between;
+          margin:0 0 0.5rem 0;
+          span{
+            width: fit-content;
+            padding:0;
+          }
+        }
+        p {}
+      }
+    }
+  }
+}
+@media only all and (min-width: 786px){
+  main{
+    section#topBanner{
+      height: 60vh;
+      div.overlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-weight:300;
+          font-size: 4rem;
+          line-height: 3rem;
+        }
+      }
+    }
+    section#mainContent {
+      width: 100%;
+      background: rgb(133,142,164);
+      background: linear-gradient(180deg, rgba(133,142,164,1) 0%, rgba(0,0,10,1) 100%);
+      padding: 2.5rem 0;
+      .review{
+        width: 80vw;
+        margin:1rem auto;
+        padding: 1.5rem;
+        border: 1px solid white;
+        background-color: rgb(255,255,255,0.25);
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        border-radius: 10px;
+        h3{
+          font-weight: 300;
+          font-size: 1.5rem;
+          margin:0 0 0.5rem 0;
+        }
+        .row{
+          display:flex;
+          flex-direction: row;
+          width:100%;
+          flex-wrap:nowrap;
+          justify-content: space-between;
+          margin:0;
+          span{
+            width: fit-content;
+            padding:0;
+          }
+        }
+      }
+    }
+  }
+}
+@media only all and (min-width: 992px){
+    main {
+    section#topBanner{
+      height: 60vh;
+      div.overlay{
+        h1{
+          font-size: 7.5rem;
+          line-height: 5rem;
+        }
+      }
+      div.bannerImgHolder{
+        img{
+        }
+      }
+    }
+    section#mainContent {
+      div.overlay{
+        overflow-x: hidden;
+        padding: 5rem 7.5vw;
+        div#contentHolder{
+          display:grid;
+          grid-template-columns: 1fr 1fr;
+          column-gap: 10vw;
+          row-gap: 5rem;
+          align-items:center;
+          justify-content:center;
+          // overflow-x:hidden;
+          width: 100%;
+          article{
+            position: relative;
+            margin: 0;
+            overflow:hidden;
+            height: 45vw;
+            width: 100%;
+            div.overlay{
+              position: absolute;
+              top: 0;
+              display: flex;
+              align-items: center;
+              justify-content:center;
+              height: 100%;
+              overflow:hidden;
+              padding:0;
+            }
+            img{
+              height: 100%;
+            }
+          }
+        }
+      }
+      img {
+        position:relative;
+        width: 100%;
+      }
+    }
+  }
+}
+@media only all and (min-width: 1200px){
+  main{
+    section#topBanner{
+      height: 75vh
+    }
+    section#mainContent {
+      div.overlay{
+        div.contentHolder{
+          width: 80vw;
+          div > h2 {
+          }
+          div > span {
+          }
+          div#dealsHolder,
+          div#featuresHolder  {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }  
+}
