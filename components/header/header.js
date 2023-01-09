@@ -19,7 +19,7 @@ export const establishHTML_header = {
     let isIndex = establishHTML_nav.determineLocation()
     if(isIndex == false){
       figure = helperFunctions.generateElement('a', "logoHolder","","","../index.html");
-      img = helperFunctions.generateElement('img',"logo","","",`../${logoPath}`);
+      img = helperFunctions.generateElement('img',"logo","","",`${logoPath}`);
     }
     figure.appendChild(img);
     return figure;
