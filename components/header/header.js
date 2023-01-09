@@ -13,7 +13,7 @@ export const establishHTML_header = {
   },
   logo: function(
     logoPath = "assets/imgs/other/logo.png",
-    figure = helperFunctions.generateElement('a', "logoHolder","","","/index.html"),
+    figure = helperFunctions.generateElement('a', "logoHolder","","",establishHTML_nav.chooseNavData().home.path),
     img = helperFunctions.generateElement('img',"logo","","",`${logoPath}`)
   ){
     figure.appendChild(img);
