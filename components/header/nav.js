@@ -2,36 +2,36 @@ import { helperFunctions } from '../index/index.js';
 import { navData, navData_index } from "../../assets/db/nav_db.js" ;
 
 export const establishHTML_nav = {
-  chooseNavData: function(
+  determineLocation: function(
     urlKey = this.getUrlKey()
   ){
-    let navOptions;
     let isIndex; 
     switch(urlKey){
       case "deals":
       case "reviews":
       case "about":
       case "contact":
-        navOptions = navData;
         isIndex = false;
         break;
       default:
-        navOptions = navData_index;
         isIndex = true;
         break;
     }
-  
-    this.determineLocation(isIndex);
-    return navOptions;
+
+    return isIndex;
   },
   clickNavBtn: function(
     mobileNav = document.getElementById('mobileNav')
   ){
     mobileNav.classList.toggle('open');
   },
-  determineLocation: function(isIndex){
+  chooseNavData: function(isIndex){
+    let navOptions = navData;
+    if (isIndex == true){
+      navOptions = navData_index;
+    }
     console.log(isIndex)
-    return isIndex;
+    return navOptions;
   },
   fillNav: function(navOption, ulElement){
     for (let i in navOption){
@@ -58,7 +58,6 @@ export const establishHTML_nav = {
   
     return urlKey;
   },
-
   menuBtn: function(
     menuBtn = helperFunctions.generateElement('div',"menuBtn"),
     burger = helperFunctions.generateElement('span',"","burger")
@@ -67,7 +66,7 @@ export const establishHTML_nav = {
     return menuBtn;
   },
   constructNav: function(
-    navOption = this.chooseNavData(),
+    navOption = this.chooseNavData(this.determineLocation()),
     nav = helperFunctions.generateElement("nav","mainNav"),
     nav_ul = helperFunctions.generateElement("ul"),
     mobileNav = helperFunctions.generateElement('section',"mobileNav"),
@@ -99,7 +98,4 @@ export const establishHTML_nav = {
 
     return returnPackage;
   }
-
-
-
 }

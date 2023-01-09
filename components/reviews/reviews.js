@@ -58,7 +58,6 @@ export const establishHTML_main = {
   ){
     div = helperFunctions.appendChildren(div, starCount, reviewDate);
     article = helperFunctions.appendChildren(article, name, div, p);
-    console.log(article);
     return article;
   }
 }

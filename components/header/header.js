@@ -12,13 +12,16 @@ export const establishHTML_header = {
     return headerElement;
   },
   logo: function(
-    logoPath = "/assets/imgs/other/logo.png",
-    figure = helperFunctions.generateElement('a', "logoHolder","","","/index.html"),
+    logoPath = "assets/imgs/other/logo.png",
+    figure = helperFunctions.generateElement('a', "logoHolder","","","index.html"),
     img = helperFunctions.generateElement('img',"logo","","",`${logoPath}`)
   ){
+    let isIndex = establishHTML_nav.determineLocation()
+    if(isIndex == false){
+      figure = helperFunctions.generateElement('a', "logoHolder","","","../index.html");
+      img = helperFunctions.generateElement('img',"logo","","",`../${logoPath}`);
+    }
     figure.appendChild(img);
     return figure;
   }
 }
-
-establishHTML_header.header();
