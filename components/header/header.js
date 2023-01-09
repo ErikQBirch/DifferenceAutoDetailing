@@ -1,5 +1,6 @@
 import { helperFunctions } from '../index/index.js'
 import { establishHTML_nav } from './nav.js';
+import { photos } from '../../assets/db/photos_db.js';
 
 export const establishHTML_header = {
   header: function(
@@ -12,7 +13,7 @@ export const establishHTML_header = {
     return headerElement;
   },
   logo: function(
-    logoPath = "assets/imgs/other/logo.png",
+    logoPath = "./assets/imgs/other/logo.png",
     figure = helperFunctions.generateElement('a', "logoHolder","","",establishHTML_nav.chooseNavData().home.path),
     img = helperFunctions.generateElement('img',"logo","","",`${logoPath}`)
   ){
