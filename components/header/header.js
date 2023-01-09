@@ -12,14 +12,14 @@ export const establishHTML_header = {
     return headerElement;
   },
   logo: function(
-    logoPath = "assets/imgs/other/Logo.png",
+    logoPath = "../assets/imgs/other/Logo.png",
     figure = helperFunctions.generateElement('a', "logoHolder","","","index.html"),
     img = helperFunctions.generateElement('img',"logo","","",`${logoPath}`)
   ){
     let isIndex = establishHTML_nav.determineLocation()
     if(isIndex == false){
       figure = helperFunctions.generateElement('a', "logoHolder","","","../index.html");
-      img = helperFunctions.generateElement('img',"logo","","",`/${logoPath}`);
+      img = helperFunctions.generateElement('img',"logo","","",`../${logoPath}`);
     }
     figure.appendChild(img);
     return figure;
