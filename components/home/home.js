@@ -25,8 +25,8 @@ export const establishHTML_main = {
     footerElement = establishHTML_footer.footer(),
     bodyElement = document.querySelector('body')
   ){
+    document.title = "Contact | Difference Auto-Detailing";
     bodyElement = helperFunctions.appendChildren(document.querySelector('body'), headerElement, mainElement,footerElement);
-    
   },
   display: function(
     feature,
