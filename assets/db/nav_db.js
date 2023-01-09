@@ -1,7 +1,7 @@
 export const navData = {
   "home":{
     "label":"Home",
-    "path":"../../index.html"
+    "path":"../index.html"
   },
   "deals":{
     "label":"Deals",
