@@ -21,8 +21,6 @@ export const establishHTML_header = {
       figure = helperFunctions.generateElement('a', "logoHolder","","","../index.html");
       img = helperFunctions.generateElement('img',"logo","","",`../${logoPath}`);
     }
-    console.log(img);
-    console.log(logoPath);
     figure.appendChild(img);
     return figure;
   }
