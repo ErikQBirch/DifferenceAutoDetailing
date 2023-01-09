@@ -1,10 +1,9 @@
 import { helperFunctions } from '../index/index.js'
 import { establishHTML_nav } from './nav.js';
-import { photos } from '../../assets/db/photos_db.js';
 
 export const establishHTML_header = {
   header: function(
-    bothNavs = establishHTML_nav.nav(),
+    bothNavs = establishHTML_nav.constructNav(),
     logoElement = this.logo(),
     headerElement = helperFunctions.generateElement('header')
   ){
@@ -13,8 +12,8 @@ export const establishHTML_header = {
     return headerElement;
   },
   logo: function(
-    logoPath = "assets/imgs/other/Logo.png",
-    figure = helperFunctions.generateElement('a', "logoHolder","","",establishHTML_nav.chooseNavData().home.path),
+    logoPath = "/assets/imgs/other/logo.png",
+    figure = helperFunctions.generateElement('a', "logoHolder","","","/index.html"),
     img = helperFunctions.generateElement('img',"logo","","",`${logoPath}`)
   ){
     figure.appendChild(img);

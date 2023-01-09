@@ -6,18 +6,22 @@ export const establishHTML_nav = {
     urlKey = this.getUrlKey()
   ){
     let navOptions;
+    let isIndex; 
     switch(urlKey){
       case "deals":
       case "reviews":
       case "about":
       case "contact":
-        navOptions = navData
+        navOptions = navData;
+        isIndex = false;
         break;
       default:
-        navOptions = navData_index
+        navOptions = navData_index;
+        isIndex = true;
         break;
     }
   
+    this.determineLocation(isIndex);
     return navOptions;
   },
   clickNavBtn: function(
@@ -25,7 +29,10 @@ export const establishHTML_nav = {
   ){
     mobileNav.classList.toggle('open');
   },
-
+  determineLocation: function(isIndex){
+    console.log(isIndex)
+    return isIndex;
+  },
   fillNav: function(navOption, ulElement){
     for (let i in navOption){
       let li = helperFunctions.generateElement('li');
@@ -59,7 +66,7 @@ export const establishHTML_nav = {
     menuBtn.appendChild(burger);
     return menuBtn;
   },
-  nav: function(
+  constructNav: function(
     navOption = this.chooseNavData(),
     nav = helperFunctions.generateElement("nav","mainNav"),
     nav_ul = helperFunctions.generateElement("ul"),
