@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(100, 100, 100);
+  color: white;
+}
+
 @media only all and (min-width: 0) {
   main section#topBanner {
     width: 100%;
@@ -24,14 +36,19 @@
   }
   main section#mainContent {
     width: 100%;
-    background: black;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-clip: border-box;
   }
   main section#mainContent div.overlay {
-    z-index: 1;
     width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
     flex-direction: column;
     justify-content: flex-start;
     align-items: start;
@@ -212,20 +229,13 @@ main div#display a:visited {
     width: 100%;
   }
   main section#mainContent div.overlay div#contentHolder article {
-    position: relative;
     margin: 0;
-    overflow: hidden;
     height: 45vw;
     width: 100%;
   }
   main section#mainContent div.overlay div#contentHolder article div.overlay {
-    position: absolute;
-    top: 0;
-    display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    overflow: hidden;
     padding: 0;
   }
   main section#mainContent div.overlay div#contentHolder article img {
@@ -243,45 +253,25 @@ main div#display a:visited {
   main div#display div.imgHolder figure {
     width: 45vw;
   }
-  main div#display div.imgHolder figure img {
-    width: 100%;
-  }
 }
 @media only all and (min-width: 1200px) {
   main section#topBanner {
     height: 75vh;
   }
   main section#mainContent div.overlay div#contentHolder {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     -moz-column-gap: 7.5vw;
          column-gap: 7.5vw;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
   }
   main section#mainContent div.overlay div#contentHolder article {
     position: relative;
-    margin: 0;
     overflow: hidden;
     height: 25vw;
-    width: 100%;
   }
   main section#mainContent div.overlay div#contentHolder article div.overlay {
     position: absolute;
     top: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     overflow: hidden;
-    padding: 0;
-  }
-  main section#mainContent div.overlay div#contentHolder article img {
-    height: 100%;
-  }
-  main section#mainContent img {
-    position: relative;
-    width: 100%;
   }
 }/*# sourceMappingURL=home.css.map */

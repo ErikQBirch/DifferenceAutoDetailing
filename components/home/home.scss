@@ -1,19 +1,13 @@
+@import "../index/index.scss";
+
 @media only all and (min-width:0){
   main{
     section#topBanner{
       width: 100%;
       height: 80vh;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-clip: border-box;
+      @include backgroundImageSettings;
       div.overlay{
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.5);
-        display:flex;
-        align-items: center;
-        justify-content: center;
+        @include overlaySettings;
         h1{
           text-align: center;
           font-family: 'Roboto', sans-serif;
@@ -25,14 +19,11 @@
     }
     section#mainContent {
       width: 100%;
-      background: black;
-      background-repeat:no-repeat;
-      background-position: center;
-      background-size:cover;
+      @include backgroundImageSettings;
       // border: 5px solid red;
       div.overlay{
+        @include overlaySettings;
         z-index: 1;
-        width: 100%;
         flex-direction:column;
         justify-content: flex-start;
         align-items:start;
@@ -189,10 +180,6 @@
           line-height: 5rem;
         }
       }
-      div.bannerImgHolder{
-        img{
-        }
-      }
     }
     section#mainContent {
       div.overlay{
@@ -205,22 +192,14 @@
           row-gap: 5rem;
           align-items:center;
           justify-content:center;
-          // overflow-x:hidden;
           width: 100%;
           article{
-            position: relative;
             margin: 0;
-            overflow:hidden;
             height: 45vw;
             width: 100%;
             div.overlay{
-              position: absolute;
-              top: 0;
-              display: flex;
               align-items: center;
               justify-content:center;
-              height: 100%;
-              overflow:hidden;
               padding:0;
             }
             img{
@@ -235,19 +214,12 @@
       }
     }
     div#display{
-      // flex-direction:row;
       div.imgHolder{
         flex-direction:row; 
         justify-content: space-evenly;
         width: 100%;       
-        // height: 80vh;
         figure{
           width: 45vw;
-          // width: 100%;
-          // height: initial;
-          img{
-            width: 100%;
-          }
         }
       }
     }
@@ -261,44 +233,21 @@
     }
     section#mainContent {
         div.overlay{
-          // overflow-x: hidden;
-          // padding: 5rem 5vw;
           div#contentHolder{
-            // width: 500vw;
-            // justify-content: flex-start;
-            display:grid;
-            grid-template-columns: 1fr 1fr;
             column-gap: 7.5vw;
-            // row-gap: 5rem;
-            align-items:center;
-            justify-content:center;
-            // overflow-x:hidden;
-            width: 100%;
             article{
               position: relative;
-              margin: 0;
               overflow:hidden;
               height: 25vw;
-              width: 100%;
               div.overlay{
                 position: absolute;
                 top: 0;
                 display: flex;
-                align-items: center;
-                justify-content:center;
                 height: 100%;
                 overflow:hidden;
-                padding:0;
-              }
-              img{
-                height: 100%;
               }
             }
           }
-        }
-        img {
-          position:relative;
-          width: 100%;
         }
       }
   }  
