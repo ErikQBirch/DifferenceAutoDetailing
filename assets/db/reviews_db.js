@@ -1,5 +1,13 @@
 export const reviews = [
   {
+    "reviewer":"Cassie Boudousquie",
+    "rating":5,
+    "starCount": "⭐⭐⭐⭐⭐",
+    "reviewDate":"Thurs Jan 26 2022",
+    "reviewText":"Kyle was great to work with! Very confident and did an excellent job! Our car looks (and smells) amazing! Extremely thorough detail, and he made sure to keep us updated and walk us through everything that he did. Highly recommend!",
+    "approved":true
+  },
+  {
     "reviewer":"Ben Griswald",
     "rating":5,
     "starCount": "⭐⭐⭐⭐⭐",
