@@ -69,7 +69,8 @@
                   font-weight:bolder;
                   
                 }
-                button{
+                a:link,
+                a:visited{
                   background:transparent;
                   color:white;
                   border: 1px solid white;
@@ -81,8 +82,8 @@
                   transition: all 0.25s ease-in-out;
                   line-height: 1.75rem;
                 }
-                button:hover,
-                button:active {
+                a:hover,
+                a:active {
                   background-color:rgba(255,255,255,0.85);
                   color:black;
                   border-color:transparent;
