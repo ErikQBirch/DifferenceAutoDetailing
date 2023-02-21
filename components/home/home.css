@@ -101,7 +101,6 @@ body {
     padding: 0 1rem;
     color: white;
     font-weight: bolder;
-    text-decoration: none;
   }
   main section#mainContent div.overlay div#contentHolder article div.overlay a:link,
   main section#mainContent div.overlay div#contentHolder article div.overlay a:visited {
@@ -115,6 +114,7 @@ body {
     font-size: 1.5rem;
     transition: all 0.25s ease-in-out;
     line-height: 1.75rem;
+    text-decoration: none;
   }
   main section#mainContent div.overlay div#contentHolder article div.overlay a:hover,
   main section#mainContent div.overlay div#contentHolder article div.overlay a:active {
