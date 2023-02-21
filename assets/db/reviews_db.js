@@ -3,8 +3,16 @@ export const reviews = [
     "reviewer":"Cassie Boudousquie",
     "rating":5,
     "starCount": "⭐⭐⭐⭐⭐",
-    "reviewDate":"Thurs Jan 26 2022",
+    "reviewDate":"Thurs Jan 26 2023",
     "reviewText":"Kyle was great to work with! Very confident and did an excellent job! Our car looks (and smells) amazing! Extremely thorough detail, and he made sure to keep us updated and walk us through everything that he did. Highly recommend!",
+    "approved":true
+  },
+  {
+    "reviewer":"Dannan Rosenlund",
+    "rating":5,
+    "starCount": "⭐⭐⭐⭐⭐",
+    "reviewDate":"Fri Jan 6 2023",
+    "reviewText":"Difference detailing reallly lives up to the name. I've had him detail for me for the last year and he always does a thorough and careful job.<br>You can tell he knows what to do.You can't go wrong with difference detailing",
     "approved":true
   },
   {
@@ -21,14 +29,6 @@ export const reviews = [
     "starCount": "⭐⭐⭐⭐⭐",
     "reviewDate":"Thurs Dec 8 2022",
     "reviewText":"Kyle takes great care of his customers! He leaves little note card for those he serves and he does great work. Would 100% recommend!!!",
-    "approved":true
-  },
-  {
-    "reviewer":"Dannan Rosenlund",
-    "rating":5,
-    "starCount": "⭐⭐⭐⭐⭐",
-    "reviewDate":"Fri Jan 6 2023",
-    "reviewText":"Difference detailing reallly lives up to the name. I've had him detail for me for the last year and he always does a thorough and careful job.<br>You can tell he knows what to do.You can't go wrong with difference detailing",
     "approved":true
   }
 ]
