@@ -60,7 +60,7 @@ export const establishHTML_main = {
     article = helperFunctions.generateElement('article'),
     overlay = helperFunctions.generateElement('div',"","overlay"),
     h3 = helperFunctions.generateElement('h3',"","",feature),
-    dealsBtn = helperFunctions.generateElement('button',"","","See Deals","/pages/deals.html"),
+    dealsBtn = helperFunctions.generateElement('button',"","","See Deals","pages/deals.html"),
     sampleBtn = helperFunctions.generateElement('button',"","","View Sample")
     ){
       
