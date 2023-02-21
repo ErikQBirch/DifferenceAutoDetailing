@@ -13,7 +13,6 @@ body {
 @media only all and (min-width: 0) {
   main section#topBanner {
     width: 100%;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     background: black;

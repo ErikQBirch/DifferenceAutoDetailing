@@ -1,6 +1,5 @@
 @media only all and (min-width: 0) {
   footer {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     height: 45vh;
@@ -34,7 +33,7 @@
     margin-bottom: 0.5rem;
   }
   footer div.overlay article p a:link,
-footer div.overlay article p a:visited {
+  footer div.overlay article p a:visited {
     color: white;
   }
 }
