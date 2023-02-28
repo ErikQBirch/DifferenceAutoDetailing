@@ -103,21 +103,24 @@ body {
     font-weight: bolder;
   }
   main section#mainContent div.overlay div#contentHolder article div.overlay a:link,
-  main section#mainContent div.overlay div#contentHolder article div.overlay a:visited {
+  main section#mainContent div.overlay div#contentHolder article div.overlay a:visited,
+  main section#mainContent div.overlay div#contentHolder article div.overlay button {
     background: transparent;
     color: white;
     border: 1px solid white;
     border-radius: 10px;
     padding: 0.5rem;
     margin-bottom: 1.75rem;
-    font-weight: lighter;
+    font-weight: lighter !important;
     font-size: 1.5rem;
     transition: all 0.25s ease-in-out;
     line-height: 1.75rem;
     text-decoration: none;
+    font-family: "Roboto", sans-serif;
   }
   main section#mainContent div.overlay div#contentHolder article div.overlay a:hover,
-  main section#mainContent div.overlay div#contentHolder article div.overlay a:active {
+  main section#mainContent div.overlay div#contentHolder article div.overlay a:active,
+  main section#mainContent div.overlay div#contentHolder article div.overlay button:hover {
     background-color: rgba(255, 255, 255, 0.85);
     color: black;
     border-color: transparent;
